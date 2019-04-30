@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190430 17:44:23.102" generator="Robot 3.1.1 (Python 2.7.12 on linux2)">
+<suite source="/home/hmicro/PycharmProjects/Robot_Framework/TestCases/TC003_Gmail_Login.robot" id="s1" name="TC003 Gmail Login">
+<test id="s1-t1" name="TC_001 Open The Browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20190430 17:44:23.240" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com'.</msg>
+<status status="PASS" endtime="20190430 17:44:26.477" starttime="20190430 17:44:23.240"></status>
+</kw>
+<status status="PASS" endtime="20190430 17:44:26.478" critical="yes" starttime="20190430 17:44:23.239"></status>
+</test>
+<test id="s1-t2" name="TC_002 Click On Gmail">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[text()='Sign in']</arg>
+</arguments>
+<msg timestamp="20190430 17:44:26.480" level="INFO">Clicking link 'xpath://a[text()='Sign in']'.</msg>
+<status status="PASS" endtime="20190430 17:44:28.013" starttime="20190430 17:44:26.480"></status>
+</kw>
+<status status="PASS" endtime="20190430 17:44:28.013" critical="yes" starttime="20190430 17:44:26.479"></status>
+</test>
+<test id="s1-t3" name="TC_004 Enter The User name">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:identifier</arg>
+<arg>risheek96bharadwaj@gmail.com</arg>
+</arguments>
+<msg timestamp="20190430 17:44:28.016" level="INFO">Typing text 'risheek96bharadwaj@gmail.com' into text field 'name:identifier'.</msg>
+<status status="PASS" endtime="20190430 17:44:28.409" starttime="20190430 17:44:28.015"></status>
+</kw>
+<status status="PASS" endtime="20190430 17:44:28.410" critical="yes" starttime="20190430 17:44:28.013"></status>
+</test>
+<test id="s1-t4" name="TC_005 Click On Next">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://div[@id="identifierNext"]</arg>
+</arguments>
+<msg timestamp="20190430 17:44:28.411" level="INFO">Clicking element 'xpath://div[@id="identifierNext"]'.</msg>
+<status status="PASS" endtime="20190430 17:44:28.594" starttime="20190430 17:44:28.411"></status>
+</kw>
+<status status="PASS" endtime="20190430 17:44:28.594" critical="yes" starttime="20190430 17:44:28.410"></status>
+</test>
+<test id="s1-t5" name="TC_006 Enter Password">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>name:password</arg>
+</arguments>
+<status status="PASS" endtime="20190430 17:44:29.442" starttime="20190430 17:44:28.599"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:password</arg>
+<arg>P@s$w0RD</arg>
+</arguments>
+<msg timestamp="20190430 17:44:29.442" level="INFO">Typing password into text field 'name:password'.</msg>
+<status status="PASS" endtime="20190430 17:44:29.660" starttime="20190430 17:44:29.442"></status>
+</kw>
+<status status="PASS" endtime="20190430 17:44:29.661" critical="yes" starttime="20190430 17:44:28.596"></status>
+</test>
+<test id="s1-t6" name="TC_007 Click On Next">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="passwordNext"]/content/span</arg>
+</arguments>
+<msg timestamp="20190430 17:44:29.662" level="INFO">Clicking element 'xpath://*[@id="passwordNext"]/content/span'.</msg>
+<status status="PASS" endtime="20190430 17:44:29.842" starttime="20190430 17:44:29.662"></status>
+</kw>
+<status status="PASS" endtime="20190430 17:44:29.842" critical="yes" starttime="20190430 17:44:29.661"></status>
+</test>
+<status status="PASS" endtime="20190430 17:44:29.844" starttime="20190430 17:44:23.104"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="6">Critical Tests</stat>
+<stat fail="0" pass="6">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="TC003 Gmail Login" pass="6">TC003 Gmail Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
